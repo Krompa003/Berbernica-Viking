@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Usluge - Berbernica Viking </title>
+    <link rel="icon" href="slike/logo.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="navbar">
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="o_nama.html"> O nama </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#"> Usluge </a>
+            </li>
+
+            <li class="nav-item logo" onmouseover="prikaziPadajuciMeni()" onmouseout="sakrijPadajuciMeni()">
+                <a href="index.html">
+                    <img class="logo-img" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)" src="slike/logo.png">
+                </a>
+                <div class="padajuci-meni" id="padajuciMeni">
+                    <a href="#" class="pravilnik-item" onclick="prikaziPravilnik(); sakrijPadajuciMeni();">Pravilnik</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="galerija.html"> Galerija </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="zakazivanje.html"> Zakazivanje </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="modalPravilnik" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="zatvoriPravilnik()">&times;</span>
+            <h2 class="modal-title">Pravilnik</h2>
+            <p class="modal-text">
+                <br>
+                1. Vaš termin možete zakazati <span class="istaknuto">isključivo</span> preko ovog našeg sajta!<br><br>
+
+                2. Vanredno zakazivanja pre i posle radnog vremena <span class="istaknuto">nije izvodljivo</span>!<br><br>
+
+                3. Zakazivanje termina pozivom <span class="istaknuto">nije izvodljivo</span>!<br><br>
+
+                4. Otkazivanje termina se vrši slanjem poruke na naš poslovni email!<br><br>
+
+                5. Na termin se dolazi <span class="istaknuto">minimalno</span> 5 minuta ranije!<br><br>
+
+                6. Kašnjenje na termin se toleriše do 5 minuta, sve više od toga se računa kao nedolazak!<br><br>
+
+                7. Termin koji ste propustili, a prethodno niste otkazali pozivom ili putem mejla, u obavezi ste da ga nadoknadite u iznosu jednog "Standardnog šišanja" <span class="istaknuto">(800din.)</span>!<br><br>
+
+                8. Pravilnik važi za <span class="istaknuto">svaku osobu</span>, privilegovane mušterije ne postoje!
+            </p><br><br>
+            <button class="close-button" onclick="zatvoriPravilnik()">Zatvori</button>
+        </div>
+    </div> 
+
+    <div class="hero-image1">
+        <div class="hero-card1">
+            <h1> Usluge </h1>
+        </div>
+    </div>
+
+    <h2> Cenovnik usluga </h2>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Standardno šišanje...................................................800 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Šišanje bez makaza..................................................700 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Šišanje (Fade).........................................................1000 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Šišanje za decu.........................................................500 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Brijanje brade..........................................................800 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Brijanje glave...........................................................700 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Štucovanje brade.....................................................400 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Linija (Brijanje).......................................................200 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Linija (Mašinica)......................................................100 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Pranje kose..............................................................250 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Nameštanje frizure...................................................100 RSD </h4>
+    <h4 onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"> Nameštanje brade.....................................................100 RSD </h4>
+
+    <div class="footer">
+        <div class="footer-social-icon">
+            <i class="fa-brands fa-facebook" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-instagram" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-viber" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-whatsapp" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+        </div>
+
+        <p class="copyright">Copyright © Berbernica Viking 2023. Sva prava zadržana.</p>
+    </div>
+
+</body>
+
+</html>

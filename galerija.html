@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Galerija - Berbernica Viking </title>
+    <link rel="icon" href="slike/logo.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="o_nama.html"> O nama </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="usluge.html"> Usluge </a>
+            </li>
+
+            <li class="nav-item logo" onmouseover="prikaziPadajuciMeni()" onmouseout="sakrijPadajuciMeni()">
+                <a href="index.html">
+                    <img class="logo-img" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+                        src="slike/logo.png">
+                </a>
+                <div class="padajuci-meni" id="padajuciMeni">
+                    <a href="#" class="pravilnik-item" onclick="prikaziPravilnik(); sakrijPadajuciMeni();">Pravilnik</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#"> Galerija </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="zakazivanje.html"> Zakazivanje </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="modalPravilnik" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="zatvoriPravilnik()">&times;</span>
+            <h2 class="modal-title">Pravilnik</h2>
+            <p class="modal-text">
+                <br>
+                1. Vaš termin možete zakazati <span class="istaknuto">isključivo</span> preko ovog našeg sajta!<br><br>
+
+                2. Vanredno zakazivanja pre i posle radnog vremena <span class="istaknuto">nije
+                    izvodljivo</span>!<br><br>
+
+                3. Zakazivanje termina pozivom <span class="istaknuto">nije izvodljivo</span>!<br><br>
+
+                4. Otkazivanje termina se vrši slanjem poruke na naš poslovni email!<br><br>
+
+                5. Na termin se dolazi <span class="istaknuto">minimalno</span> 5 minuta ranije!<br><br>
+
+                6. Kašnjenje na termin se toleriše do 5 minuta, sve više od toga se računa kao nedolazak!<br><br>
+
+                7. Termin koji ste propustili, a prethodno niste otkazali pozivom ili putem mejla, u obavezi ste da ga
+                nadoknadite u iznosu jednog "Standardnog šišanja" <span class="istaknuto">(800din.)</span>!<br><br>
+
+                8. Pravilnik važi za <span class="istaknuto">svaku osobu</span>, privilegovane mušterije ne postoje!
+            </p><br><br>
+            <button class="close-button" onclick="zatvoriPravilnik()">Zatvori</button>
+        </div>
+    </div>
+
+    <div id="modalSlike" class="modal">
+        <div class="modal-content-slike">
+            <span class="close" onclick="zatvoriModalSlike()">&times;</span>
+            <div class="slike-modal">
+                <img class="slika-modal" id="modalSlika" src="" alt="Slika">
+                <div class="strelice">
+                    <i class="fas fa-chevron-left strelica-levo" onclick="prethodnaSlika()"></i>
+                    <i class="fas fa-chevron-right strelica-desno" onclick="sledecaSlika()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image1">
+        <div class="hero-card1">
+            <h1> Galerija </h1>
+        </div>
+    </div>
+
+    <div class="slike">
+        <img class="slika" onclick="prikaziModalSlike(0)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika1.jpg">
+        <img class="slika" onclick="prikaziModalSlike(1)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika2.jpg">
+        <img class="slika" onclick="prikaziModalSlike(2)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika3.jpg">
+        <img class="slika" onclick="prikaziModalSlike(3)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika4.jpg">
+        <img class="slika" onclick="prikaziModalSlike(4)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika5.jpg">
+        <img class="slika" onclick="prikaziModalSlike(5)" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"
+            src="slike/galerija/slika6.jpg">
+    </div>
+
+    <div class="footer">
+        <div class="footer-social-icon">
+            <i class="fa-brands fa-facebook" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-instagram" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-viber" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+            <i class="fa-brands fa-whatsapp" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)"></i>
+        </div>
+
+        <p class="copyright">Copyright © Berbernica Viking 2023. Sva prava zadržana.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
