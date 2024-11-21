@@ -1,123 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKLNTGTLKZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-TKLNTGTLKZ');
-    </script>
-    
-    <title> Berbernica Viking - Muško šišanje, oblikovanje brade, brijanje i muška nega </title>
-    <link rel="icon" href="favicon/favicon.ico">
-    <meta charset="UTF-8">
-    <link rel="canonical" href="https://krompa003.github.io/Berbernica-Viking/" />
-    <meta name="keywords" content="berbernica, šišanje, muške frizure, klasične frizure, oblikovanje brade, brijanje, vintidž stil, muška nega, nega brade, stil za muškarce, moderne muške frizure, muški salon, šišanje u Novom Sadu">
-    <meta name="title" content="Berbernica-Viking" />
-    <meta name="copyright" content="Nemanja Krompić" />
-    <meta name="description" content="Berbernica Viking nudi profesionalne usluge šišanja, oblikovanja brade i brijanja, uz vintidž stil i autentičnu mušku negu. Posetite nas za savršen izgled!" />
-
-    <meta property="og:url" content="https://krompa003.github.io/Berbernica-Viking/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Berbernica-Viking" />
-    <meta property="og:description" content="Sajt koji sadrži sve što se tiče muške nege" />
-    <meta property="og:image" content="https://krompa003.github.io/Berbernica-Viking/slike/HeroImage/Salon.png" />
-    
-    <link rel="stylesheet" href="style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKLNTGTLKZ"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-TKLNTGTLKZ")</script>
+<title> Berbernica Viking - Muško šišanje, oblikovanje brade, brijanje i muška nega </title>
+<link rel=icon href=favicon/favicon.ico>
+<meta charset=UTF-8>
+<link rel=canonical href=https://krompa003.github.io/Berbernica-Viking/ >
+<meta name=keywords content="berbernica, šišanje, muške frizure, klasične frizure, oblikovanje brade, brijanje, vintidž stil, muška nega, nega brade, stil za muškarce, moderne muške frizure, muški salon, šišanje u Novom Sadu">
+<meta name=title content=Berbernica-Viking>
+<meta name=copyright content="Nemanja Krompić">
+<meta name=description content="Berbernica Viking nudi profesionalne usluge šišanja, oblikovanja brade i brijanja, uz vintidž stil i autentičnu mušku negu. Posetite nas za savršen izgled!">
+<meta property=og:url content=https://krompa003.github.io/Berbernica-Viking/ >
+<meta property=og:type content=website>
+<meta property=og:title content=Berbernica-Viking>
+<meta property=og:description content="Sajt koji sadrži sve što se tiče muške nege">
+<meta property=og:image content=https://krompa003.github.io/Berbernica-Viking/slike/HeroImage/Salon.png>
+<link rel=stylesheet href=style.css>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel=stylesheet>
 </head>
-
 <body>
-    <script src="script.js"></script>
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v21.0"></script>
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v21.0"></script>
-
-    <div class="navbar">
-
-        <ul class="nav-menu">
-
-            <li class="nav-item">
-                <a href="o_nama.html" title="Saznajte više o Berbernici Viking - Muško šišanje, oblikovanje brade i brijanje"> O nama </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="usluge.html" title="Muške frizure, šišanje, brijanje i oblikovanje brade u Berbernici Viking"> Usluge </a>
-            </li>
-
-            <li class="nav-item logo" onmouseover="prikaziPadajuciMeni()" onmouseout="sakrijPadajuciMeni()">
-                <a href="#">
-                    <img class="logo-img" onmouseover="zumiraj(this)" onmouseout="odzumiraj(this)" src="slike/logo.png" alt="Logo Berbernice Viking - Muško šišanje, oblikovanje brade, brijanje i muška nega">
-                </a>
-                <div class="padajuci-meni" id="padajuciMeni">
-                    <a href="#" class="pravilnik-item" onclick="prikaziPravilnik(); sakrijPadajuciMeni();">Pravilnik</a>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a href="galerija.html" title="Galerija muških frizura, šišanja i oblikovanja brade"> Galerija </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="zakazivanje.html" title="Zakazivanje termina za šišanje, brijanje i oblikovanje brade"> Zakazivanje </a>
-            </li>
-        </ul>
-
-    </div>
-
-    <div id="modalPravilnik" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="zatvoriPravilnik()">&times;</span>
-            <h2 class="modal-title">Pravilnik</h2>
-            <p class="modal-text">
-                <br>
-                1. Vaš termin možete zakazati <span class="istaknuto">isključivo</span> preko ovog našeg sajta!<br><br>
-
-                2. Vanredno zakazivanja pre i posle radnog vremena <span class="istaknuto">nije
-                    izvodljivo</span>!<br><br>
-
-                3. Zakazivanje termina pozivom <span class="istaknuto">nije izvodljivo</span>!<br><br>
-
-                4. Otkazivanje termina se vrši slanjem poruke na naš poslovni email!<br><br>
-
-                5. Na termin se dolazi <span class="istaknuto">minimalno</span> 5 minuta ranije!<br><br>
-
-                6. Kašnjenje na termin se toleriše do 5 minuta, sve više od toga se računa kao nedolazak!<br><br>
-
-                7. Termin koji ste propustili, a prethodno niste otkazali pozivom ili putem mejla, u obavezi ste da ga
-                nadoknadite u iznosu jednog "Standardnog šišanja" <span class="istaknuto">(800din.)</span>!<br><br>
-
-                8. Pravilnik važi za <span class="istaknuto">svaku osobu</span>, privilegovane mušterije ne postoje!
-            </p><br><br>
-            <button class="close-button" onclick="zatvoriPravilnik()">Zatvori</button>
-        </div>
-    </div>
-
-    <div class="hero-image">
-        <div class="hero-card">
-            <h1>Dobrodošli u Berbernicu Viking - Vaš muški frizerski salon u Novom Sadu</h1>
-            <a href="o_nama.html" title="Saznajte više o Berbernici Viking"> Saznajte više </a>
-        </div>
-    </div>
-    
-    <div class="fb-share-button" data-href="https://krompa003.github.io/Berbernica-Viking/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkrompa003.github.io%2FBerbernica-Viking%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Подели</a></div>
-
-    <div class="fb-like" data-href="https://krompa003.github.io/Berbernica-Viking/" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div>
-    
-    <h2><a href="usluge.html" class="usluge-link" title="Muško šišanje, oblikovanje brade i brijanje usluge u Berbernici Viking">Naše usluge šišanja, brijanja i muške nege <span class="arrow">→</span></a></h2>
-
+<script src=script.js></script>
+<div id=fb-root></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v21.0"></script>
+<div id=fb-root></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v21.0"></script>
+<div class=navbar>
+<ul class=nav-menu>
+<li class=nav-item>
+<a href=o_nama.html title="Saznajte više o Berbernici Viking - Muško šišanje, oblikovanje brade i brijanje"> O nama </a>
+</li>
+<li class=nav-item>
+<a href=usluge.html title="Muške frizure, šišanje, brijanje i oblikovanje brade u Berbernici Viking"> Usluge </a>
+</li>
+<li class="nav-item logo" onmouseover=prikaziPadajuciMeni() onmouseout=sakrijPadajuciMeni()>
+<a href=#>
+<img class=logo-img onmouseover=zumiraj(this) onmouseout=odzumiraj(this) src=slike/logo.png alt="Logo Berbernice Viking - Muško šišanje, oblikovanje brade, brijanje i muška nega">
+</a>
+<div class=padajuci-meni id=padajuciMeni>
+<a href=# class=pravilnik-item onclick=prikaziPravilnik(),sakrijPadajuciMeni()>Pravilnik</a>
+</div>
+</li>
+<li class=nav-item>
+<a href=galerija.html title="Galerija muških frizura, šišanja i oblikovanja brade"> Galerija </a>
+</li>
+<li class=nav-item>
+<a href=zakazivanje.html title="Zakazivanje termina za šišanje, brijanje i oblikovanje brade"> Zakazivanje </a>
+</li>
+</ul>
+</div>
+<div id=modalPravilnik class=modal>
+<div class=modal-content>
+<span class=close onclick=zatvoriPravilnik()>&times;</span>
+<h2 class=modal-title>Pravilnik</h2>
+<p class=modal-text>
+<br>
+1. Vaš termin možete zakazati <span class=istaknuto>isključivo</span> preko ovog našeg sajta!<br><br>
+2. Vanredno zakazivanja pre i posle radnog vremena <span class=istaknuto>nije izvodljivo</span>!<br><br>
+3. Zakazivanje termina pozivom <span class=istaknuto>nije izvodljivo</span>!<br><br>
+4. Otkazivanje termina se vrši slanjem poruke na naš poslovni email!<br><br>
+5. Na termin se dolazi <span class=istaknuto>minimalno</span> 5 minuta ranije!<br><br>
+6. Kašnjenje na termin se toleriše do 5 minuta, sve više od toga se računa kao nedolazak!<br><br>
+7. Termin koji ste propustili, a prethodno niste otkazali pozivom ili putem mejla, u obavezi ste da ga nadoknadite u iznosu jednog "Standardnog šišanja" <span class=istaknuto>(800din.)</span>!<br><br>
+8. Pravilnik važi za <span class=istaknuto>svaku osobu</span>, privilegovane mušterije ne postoje!
+</p><br><br>
+<button class=close-button onclick=zatvoriPravilnik()>Zatvori</button>
+</div>
+</div>
+<div class=hero-image>
+<div class=hero-card>
+<h1>Dobrodošli u Berbernicu Viking - Vaš muški frizerski salon u Novom Sadu</h1>
+<a href=o_nama.html title="Saznajte više o Berbernici Viking"> Saznajte više </a>
+</div>
+</div>
+<div class=fb-share-button data-href=https://krompa003.github.io/Berbernica-Viking/ data-layout="" data-size=""><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkrompa003.github.io%2FBerbernica-Viking%2F&amp;src=sdkpreparse" class=fb-xfbml-parse-ignore>Подели</a></div>
+<div class=fb-like data-href=https://krompa003.github.io/Berbernica-Viking/ data-width="" data-layout="" data-action="" data-size="" data-share=false></div>
+<h2><a href=usluge.html class=usluge-link title="Muško šišanje, oblikovanje brade i brijanje usluge u Berbernici Viking">Naše usluge šišanja, brijanja i muške nege <span class=arrow>→</span></a></h2>
 </body>
-
 </html>
