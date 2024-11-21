@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow:/slike/
 
 sitemap:https://krompa003.github.io/Berbernica-Viking/sitemap.xml
